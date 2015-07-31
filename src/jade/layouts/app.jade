@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title Sega Mega Drive 16 Bit
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width,initial-scale=1")
+        link(rel="icon",href="/favicon.ico")
+        //link(href="/css/css.css",rel="stylesheet")
+        link(href="/css/app.css",rel="stylesheet")
+        block head
+    body
+        div.page-container
+            block body
+                include /blocks/header
+                include /blocks/menu
+                div.page-content
+                    block content
+                include /blocks/footer
+        script(src="/js/app.js")
