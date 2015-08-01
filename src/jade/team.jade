@@ -1,31 +1,19 @@
 extends layouts/app
 
 block content
-    script(type='text/javascript').
-        var image_path = 'img/';
-        // preload 8 images, 0-3:
-        var pics = new Array(4);
-        for (var i = 0; i < pics.length; i++) {
-            pics[i] = new Image();
-            pics[i].src = image_path + i + '.jpg';
-        }
-        function hover(kaid) {
-            var num = Math.floor(Math.random() * pics.length);
-            kaid.src = image_path + num + '.jpg';
-        }
     #main(style='margin-top: 30px')
         p
             table
                 tbody
                     tr
                         td
-                            img(src='/img/2.jpg', alt='Kaid', onmouseover='hover(this)')
+                            img.team-mate-image(src='/img/2.jpg')
                         td
-                            img(src='/img/0.jpg', alt='Kaid', onmouseover='hover(this)')
+                            img.team-mate-image(src='/img/0.jpg')
                         td
-                            img(src='/img/2.jpg', alt='Kaid', onmouseover='hover(this)')
+                            img.team-mate-image(src='/img/2.jpg')
                         td
-                            img(src='/img/0.jpg', alt='Kaid', onmouseover='hover(this)')
+                            img.team-mate-image(src='/img/0.jpg')
                     tr(align='center')
                         td
                             a(href='/andrew.html')

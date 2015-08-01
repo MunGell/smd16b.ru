@@ -19,28 +19,15 @@
         <area shape="rect" alt="" title="" coords="896,34,920,64" href="mailto:sega@smd16b.ru" target="_blank">
         <area shape="rect" alt="" title="" coords="923,34,946,62" href="http://vkontakte.ru/club1536954" target="_blank"></map><span class="menu"><a href="news.html" class="menu__link">новости</a><span class="menu__divider menu__divider--green">/</span><a href="/team.html" class="menu__link">команда</a><span class="menu__divider menu__divider--blue">/</span><a href="/nashe.html" class="menu__link">наше</a><span class="menu__divider menu__divider--yellow">/</span><a href="https://www.youtube.com/user/smd16b" class="menu__link">видео</a><span class="menu__divider menu__divider--purple">/</span><a href="http://photo.smd16b.ru/" class="menu__link">фото</a><span class="menu__divider menu__divider--orange">/</span><a href="/super.html" class="menu__link">суперраздел</a></span>
       <div class="page-content">
-        <script type="text/javascript">
-          var image_path = 'img/';
-          // preload 8 images, 0-3:
-          var pics = new Array(4);
-          for (var i = 0; i < pics.length; i++) {
-              pics[i] = new Image();
-              pics[i].src = image_path + i + '.jpg';
-          }
-          function hover(kaid) {
-              var num = Math.floor(Math.random() * pics.length);
-              kaid.src = image_path + num + '.jpg';
-          }
-        </script>
         <div id="main" style="margin-top: 30px">
           <p>
             <table>
               <tbody>
                 <tr>
-                  <td><img src="/img/2.jpg" alt="Kaid" onmouseover="hover(this)"></td>
-                  <td><img src="/img/0.jpg" alt="Kaid" onmouseover="hover(this)"></td>
-                  <td><img src="/img/2.jpg" alt="Kaid" onmouseover="hover(this)"></td>
-                  <td><img src="/img/0.jpg" alt="Kaid" onmouseover="hover(this)"></td>
+                  <td><img src="/img/2.jpg" class="team-mate-image"></td>
+                  <td><img src="/img/0.jpg" class="team-mate-image"></td>
+                  <td><img src="/img/2.jpg" class="team-mate-image"></td>
+                  <td><img src="/img/0.jpg" class="team-mate-image"></td>
                 </tr>
                 <tr align="center">
                   <td><a href="/andrew.html"><font color="#278910"><b>Андрей</b></font></a></td>
@@ -101,6 +88,7 @@
       </div>
       <div class="footer">sega@smd16b.ru &copy; Сега Мега Драйв 16 бит, 2008-2011</div>
     </div>
+    <script src="https://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
     <script src="/js/app.js"></script>
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
