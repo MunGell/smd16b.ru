@@ -15,13 +15,18 @@ gulp.task('jade', function () {
             pretty: true,
             basedir: path.join(__dirname, 'src/jade')
         })).on('error', onError)
-        .pipe(gulp.dest('./src'))
+        .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('less', function () {
-    return gulp.src('src/less/app.less')
+    return gulp.src(['src/less/app.less', 'src/less/css.less'])
         .pipe(plugins.less()).on('error', onError)
-        .pipe(gulp.dest('src/css'));
+        .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('img', function () {
+    return gulp.src('src/img/*.*')
+        .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('server', function () {
@@ -38,8 +43,6 @@ gulp.task('watch', function () {
     gulp.watch('src/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('build', ['jade', 'less']);
-
-gulp.task('build-production', ['jade', 'less']);
+gulp.task('build', ['jade', 'less', 'img']);
 
 gulp.task('default', ['watch']);
