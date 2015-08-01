@@ -1,10 +1,10 @@
 default: publish
 
-publish: dist
+publish:
 	git subtree push --prefix dist origin gh-pages
 .PHONY: publish
 
-dist: gulpfile.js node_modules
+dist: gulpfile.js
 	@gulp build
 
 node_modules: package.json
