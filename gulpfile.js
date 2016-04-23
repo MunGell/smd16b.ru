@@ -36,7 +36,7 @@ gulp.task('js', function () {
 
 gulp.task('server', function () {
     plugins.connect.server({
-        'root': './',
+        'root': './dist',
         'port': 8000
     });
 });
