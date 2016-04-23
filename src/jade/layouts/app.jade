@@ -12,7 +12,9 @@ html(lang="en")
     body
         div.page-container
             block body
-                include /blocks/header
+                div.header
+                    a(href="/")
+                        img(src='/img/top.jpg')
                 include /blocks/menu
                 div.page-content
                     block content

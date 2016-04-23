@@ -1,6 +1,10 @@
 @import "menu";
 @import "team-menu";
 
+body {
+    padding-top: 70px;
+}
+
 .page-container {
     background: #fff;
     font-family: Verdana;
@@ -18,7 +22,6 @@
 
 .index-image {
     margin-top: 30px;
-    float: right;
 }
 
 #main-a {
@@ -47,4 +50,36 @@
 
 .color-orange {
     color: #ba6b25;
+}
+
+.page-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .member {
+        text-align: center;
+    }
+}
+
+.team-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team-menu {
+    text-align: center;
 }
