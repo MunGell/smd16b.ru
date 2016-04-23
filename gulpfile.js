@@ -21,6 +21,10 @@ gulp.task('jade', function () {
 gulp.task('less', function () {
     return gulp.src(['src/less/app.less', 'src/less/css.less'])
         .pipe(plugins.less()).on('error', onError)
+        .pipe(plugins.autoprefixer({
+            browsers: ['> 5%'],
+            cascade: false
+        }))
         .pipe(gulp.dest('dist/css'));
 });
 
