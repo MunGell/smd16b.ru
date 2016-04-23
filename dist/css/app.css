@@ -1,0 +1,135 @@
+.navbar-default {
+  background: #fff;
+}
+.menu {
+  color: #000;
+  margin: 0;
+  letter-spacing: -5px;
+  font-size: 44px;
+  text-decoration: none;
+  text-align: center;
+}
+.menu__link {
+  text-decoration: none;
+  color: #000;
+}
+.menu__link:hover {
+  color: #000;
+}
+.menu__divider--green {
+  color: #278910;
+}
+.menu__divider--blue {
+  color: #2b8ec6;
+}
+.menu__divider--yellow {
+  color: #cbbb0d;
+}
+.menu__divider--purple {
+  color: #700a79;
+}
+.menu__divider--orange {
+  color: #ba6b25;
+}
+.team-menu--main {
+  text-align: center;
+}
+.team-menu__link {
+  font-weight: bold;
+}
+.team-menu__link--green {
+  color: #278910;
+}
+.team-menu__link--blue {
+  color: #2b8ec6;
+}
+.team-menu__link--yellow {
+  color: #cbbb0d;
+}
+.team-menu__link--purple {
+  color: #700a79;
+}
+.team-menu__link--orange {
+  color: #ba6b25;
+}
+body {
+  padding-top: 70px;
+}
+.page-container {
+  background: #fff;
+  font-family: Verdana;
+  margin: 0 auto;
+  width: 1010px;
+}
+.footer {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  clear: both;
+  color: #ccc;
+}
+.index-image {
+  margin-top: 30px;
+}
+#main-a {
+  height: 750px;
+  margin-top: 10px;
+  background-image: url('/img/back-a.jpg');
+  background-repeat: no-repeat;
+  padding-left: 250px;
+}
+.color-green {
+  color: #278910;
+}
+.color-blue {
+  color: #2b8ec6;
+}
+.color-yellow {
+  color: #cbbb0d;
+}
+.color-purple {
+  color: #700a79;
+}
+.color-orange {
+  color: #ba6b25;
+}
+.page-index {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.header {
+  text-align: center;
+}
+.team-images {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.team-images .member {
+  text-align: center;
+}
+.team-info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.team-menu {
+  text-align: center;
+}
