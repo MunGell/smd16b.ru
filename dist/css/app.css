@@ -29,6 +29,9 @@
 .menu__divider--orange {
   color: #ba6b25;
 }
+.team-menu--main {
+  text-align: center;
+}
 .team-menu__link {
   font-weight: bold;
 }
@@ -70,4 +73,19 @@
   background-image: url('/img/back-a.jpg');
   background-repeat: no-repeat;
   padding-left: 250px;
+}
+.color-green {
+  color: #278910;
+}
+.color-blue {
+  color: #2b8ec6;
+}
+.color-yellow {
+  color: #cbbb0d;
+}
+.color-purple {
+  color: #700a79;
+}
+.color-orange {
+  color: #ba6b25;
 }
